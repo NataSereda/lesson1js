@@ -1,3 +1,10 @@
 .user > img{
     width: 200px;
 }
+.user h2{
+    background: blue;
+}
+
+.product-card >img{
+    width: 200px;
+}

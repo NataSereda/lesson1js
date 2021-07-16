@@ -69,13 +69,74 @@
             document.write(
                 `<div class="user">
         <h2>${user.name} ${user.surname } ${user.age} </h2>
+        <p>Good</p>
         <img src="${user.image}" alt="">
         </div>`);
 
         document.write(`</div>`);
 
+    }
+
+</script>
+
+
+
+
+
+
+
+<!--        template 3.1
+<div>
+    <div class="product-card">
+        <h3 class="product-title">TITLE. Price - PRICE</h3>
+        <img src="" alt="" class="product-image">
+    </div>
+    &lt;!&ndash;
+                інші об'єкти з масиву
+                ...
+                ...
+                ...
+    &ndash;&gt;
+
+</div>-->
+
+<script>
+    let products = [
+        {tittle:`coffee`,
+         price: 60,
+         image: `https://th.bing.com/th/id/OIP.Vn04Gj9QMsnQTp4J0yn3IgHaLL?pid=ImgDet&rs=1`
+        },
+        {tittle:`tea`,
+            price: 30,
+            image: `https://th.bing.com/th/id/OIP.JGvq-iL0Wo1gLFo0gq5AEgHaMh?pid=ImgDet&rs=1`
+        },
+        {tittle:`sugar`,
+            price: 40,
+            image: `https://th.bing.com/th/id/OIP.7-ASYF58qxjPmGX0T1KzhQHaHa?pid=ImgDet&rs=1`
+        },
+        {tittle:`salt`,
+            price: 10,
+            image: `https://th.bing.com/th/id/R.3b39c4f81d2f00cb0f0edecbe993973a?rik=5e03xAEJyIItLw&pid=ImgRaw`
+        },
+    ]
+    document.write(`<div class ="products-box">`)
+    for (const product of products) {
+        document.write(
+            `<div class="product-card">
+        <h2>${product.tittle} - ${product.price} грн</h2>
+
+        <img src="${product.image}" alt="">
+        </div>`);
+
+        document.write(`</div>`);
 
     }
+
+
+
+
+
+
 
 
 
