@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<script>-->
+
+<!--let skills = [`java`,`js`,`html`];-->
+<!--document.write(`<ol>`);-->
+<!--for (let skill of skills) {-->
+<!--    document.write(`<li> ${skill}</li>`);-->
+<!--}-->
+<!--document.write(`</ol>`);-->
+
+<!--</script>-->
+
+
+        <!--template 2.1
+<div>
+    NAME- SURNAME- AGE- INFO- <img src="PHOTO" alt="">
+</div>-->
+
+<!--<script>-->
+<!--    let users = [-->
+<!--        {name: `Olia`, surname: `Vovk`, age: 25, image: `https://th.bing.com/th/id/R.22d92b96b0b7a2bf366b857fa80a8906?rik=jwlqxue51EIeJw&pid=ImgRaw`}-->
+
+<!--    ]-->
+
+<!--    for (const user of users) {-->
+<!--        document.write(-->
+<!--            `<div class="user">-->
+<!--        <h2>${user.name} ${user.surname } ${user.age} </h2>-->
+<!--        <img src="${user.image}" alt="">-->
+<!--        </div>`);-->
+
+<!--    }-->
+
+<!--</script>-->
+
+
+
+
+<!--template 2.2&ndash;&gt;-->
+<!--<div>-->
+<!--    <h2>NAME SURNAME. age is - AGE</h2>-->
+<!--    <p>INFO</p>-->
+<!--    <img src="PHOTO" alt="">-->
+<!--</div>-->
+<!--&lt;!&ndash;-->
+<!--інші об'єкти з масиву-->
+<!--...-->
+
+
+<script>
+
+    let users = [
+        {name: `Sofia`, surname: `Kit`, age: 35, image:`https://th.bing.com/th/id/R.22d92b96b0b7a2bf366b857fa80a8906?rik=jwlqxue51EIeJw&pid=ImgRaw`},
+        {name: `Oleg`, surname: `Sereda`, age: 20, image:`https://th.bing.com/th/id/R.b8e11b0ba59e17fa2ece2d875769a0c1?rik=VTBqRA%2fgC5LFCQ&riu=http%3a%2f%2fbipbap.ru%2fwp-content%2fuploads%2f2018%2f02%2f8c7ab628e669fe0a73d33ff1037bff25-smiley-knowledge-640x577.jpg&ehk=5x3NqbLqSU56WBsFoYSWC5%2f8Fk%2bWyyuf5UU2NOqLaR8%3d&risl=&pid=ImgRaw`},
+        {name: `Petro`, surname: `Smilka`, age: 31, image:`https://th.bing.com/th/id/OIP.R93LcK5CJa7fUJkSEhMcpgHaHK?pid=ImgDet&rs=1`},
+        {name: `Sasha`, surname: `Buk`, age: 19, image:`https://yt3.ggpht.com/a/AATXAJx8GvCx6B3ARvclPQLxvU1-IgWf1JTNYVXXPw=s900-c-k-c0xffffffff-no-rj-mo`}
+    ]
+
+    document.write(`<div class ="users-box">`)
+        for (const user of users) {
+            document.write(
+                `<div class="user">
+        <h2>${user.name} ${user.surname } ${user.age} </h2>
+        <img src="${user.image}" alt="">
+        </div>`);
+
+        document.write(`</div>`);
+
+
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
