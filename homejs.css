@@ -8,3 +8,6 @@
 .product-card >img{
     width: 200px;
 }
+.product-card h2{
+    background: yellow;
+}
