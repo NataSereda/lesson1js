@@ -1004,10 +1004,10 @@
     document.write(`<div class="users-box">`);
     for (const user of usersList)
     {document.write(`<div class="user-block"> <h2>${user.id} ${user.name} ${user.username}</h2>
-        <h3>${user.email} ${user.phone} ${user.website}</h3>
+        <h3>${user.email} - ${user.phone} - ${user.website}</h3>
         <div class="address-block">
-        <p>${user.address.street} ${user.address.suite} ${user.address.city} ${user.address.zipcode} ${user.address.zipcode.geo}</p>
-        <p>${user.company.name} ${user.catchPhrase} ${user.bs}</p>
+        <p>${user.address.street} ${user.address.suite} ${user.address.city} ${user.address.zipcode}</p>
+        <p>${user.company.name} ${user.company.catchPhrase} ${user.company.bs}</p>
 
         </div>
  </div>`)}
